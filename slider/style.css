@@ -1,0 +1,76 @@
+.one {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 30px;
+    animation-name: kkk;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    /*animation-direction: alternate-reverse;*/
+    animation-fill-mode: forwards;
+}
+@keyframes kkk {
+    0% {
+        margin-left: 0;
+        background: black;
+    }
+    30% {
+        margin-left: 800px;
+        margin-top: 30px;
+    }
+    60% {
+        margin-top: 300px;
+    }
+    100% {
+        margin-left: 0;
+        background: red;
+    }
+}
+/*end*/
+.slider {
+    width: 384px;
+    height: 128px;
+    border: 5px solid red;
+    position: relative;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.line {
+    height: 128px;
+    width: 768px;
+    background: pink;
+    font-size: 0;
+    animation-name: myslider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes myslider {
+    50% {
+        margin-left: -384px;
+    }
+}
+/*end line*/
+.slider1 {
+    width: 128px;
+    height: 384px;
+    border: 5px solid red;
+    /*position: relative;*/
+    margin: 40px auto;
+    overflow: hidden;
+}
+.col {
+    height: 768px;
+    width: 128px;
+    background: pink;
+    font-size: 0;
+    animation-name: myslider1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes myslider1 {
+    50% {
+        margin-top: -384px;
+    }
+}

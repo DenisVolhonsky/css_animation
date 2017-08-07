@@ -1,0 +1,89 @@
+.pic {
+background: #80CDC6;
+height: 500px;
+width: 600px;
+margin: 30px auto;
+overflow:hidden;
+position: relative;
+    animation-name: night;
+    animation-duration: 30s;
+
+}
+.world, .water, .clouds, .ship, .wood {
+position: absolute;
+}
+.world {
+width: 608px;
+left: 0;
+bottom: 0;
+z-index: 1;
+}
+.water {
+left: -50px;
+bottom: 0;
+width: 700px;
+z-index: 3;
+
+    animation-name: movewater;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.clouds {
+height: 400px;
+width: 400px;
+top: -139px;
+left: 100px;
+    animation-name: moveclouds;
+    animation-duration: 100s;
+}
+.ship {
+width: 126px;
+bottom: 40px;
+left: 25px;
+z-index: 2;
+    animation-name: moveship;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.sun {
+    animation-name: movesun;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movewater {
+  50% {
+      margin-left: 8px;
+  }
+}
+@keyframes moveclouds {
+   10% {
+       margin-left: 100px;
+       opacity: 0;
+
+   }
+   30% {
+       margin-top: 30px;
+       opacity: 50%;
+   }
+   50% {
+       margin-right: 100px;
+   }
+
+}
+@keyframes moveship {
+   50% {
+       margin-left: 600px;
+   }
+}
+@keyframes movesun {
+    50% {
+        margin-top: 600px;
+        margin-left: 600px;
+    }
+}
+@keyframes night {
+    50% {
+        background: #151c9a;
+    }
+}
